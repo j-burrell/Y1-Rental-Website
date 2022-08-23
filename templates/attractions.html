@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Attractions Page</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.min.css') }}">
+
+    <script src="{{url_for('static', filename='js/lightbox-plus-jquery.min.js')}}"></script>
+
+</head>
+
+<body>
+
+    <h1> City Centre Apartment | Modern, Cozy & Chic </h1>
+
+    <div class="navigation">
+
+        <ul>
+
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+
+            <li><a href="{{ url_for('rental') }}">Bookings</a></li>
+
+            <li class="active">Attractions</li>
+
+            <li><a href="{{ url_for('review') }}">Reviews</a></li>
+
+        </ul>
+
+    </div>
+
+    <div class="gallery">
+
+        <a href = "static/images/picture13.jpg" data-lightbox="mygallery"><img src="static/images/picture13small.jpg" alt=""></a>
+        <a href = "static/images/picture14.jpg" data-lightbox="mygallery"><img src="static/images/picture14small.jpg" alt=""></a>
+        <a href = "static/images/picture15.jpg" data-lightbox="mygallery"><img src="static/images/picture15small.jpg" alt=""></a>
+        <a href = "static/images/picture16.jpg" data-lightbox="mygallery"><img src="static/images/picture16small.jpg" alt=""></a>
+        <a href = "static/images/picture17.jpg" data-lightbox="mygallery"><img src="static/images/picture17small.jpg" alt=""></a>
+        <a href = "static/images/picture18.jpg" data-lightbox="mygallery"><img src="static/images/picture18small.jpg" alt=""></a>
+        <a href = "static/images/picture19.jpg" data-lightbox="mygallery"><img src="static/images/picture19small.jpg" alt=""></a>
+        <a href = "static/images/picture20.jpg" data-lightbox="mygallery"><img src="static/images/picture20small.jpg" alt=""></a>
+        <a href = "static/images/picture21.jpg" data-lightbox="mygallery"><img src="static/images/picture21small.jpg" alt=""></a>
+        <a href = "static/images/picture22.jpg" data-lightbox="mygallery"><img src="static/images/picture22small.jpg" alt=""></a>
+        <a href = "static/images/picture23.jpg" data-lightbox="mygallery"><img src="static/images/picture23small.jpg" alt=""></a>
+        <a href = "static/images/picture24.jpg" data-lightbox="mygallery"><img src="static/images/picture24small.jpg" alt=""></a>
+
+    </div>
+
+    <div class="wrapper">
+        
+        <h2>Shopping</h2>
+        <p>
+            Norwich is fairly compact, compared to other city's in the UK and therefore makes a good choice for a weekend shopping spree as all the main areas can be accessed easily on foot.
+            You will find some lovely streets and alleys linking the main areas, containing all kinds of shops, from chain stores to individual boutiques.
+        </p>
+
+        <h2>Sightseeing</h2>
+        <p>
+            One of the best ways to feel at home in a destination is to live like a local and nothing sets you up better to live like a local than some of Norwich’s best attractions
+            Get under the skin of some of Norwich’s most famous and iconic buildings. Norwich has two cathedrals; the first is the beautiful 900 year old Romanesque
+            Norwich Cathedral, bursting at the seams with history. Norwich Castle Museum & Art Gallery sits proudly on its mound high above the city, just a few years older than Norwich Cathedral.
+            This museum houses all matter of artifacts from Saxon gold hoards and jewellery, to a vast collection of tea pots and stunning natural history displays. There are frequent special exhibitions, tours,
+            talks and activities plus battlements and a dungeon. Norwich has many more sights to offer to explore either alone or with friends and family
+        </p>
+
+        <h2>Restaurants</h2>
+        <p>The historic architecture, cobbled lanes and leafy riverside are just perfect to stroll through, which means you'll fast work up an appetite. Norwich has a thriving food scene
+            and with so many restaurants and cafes to choose from, it can be a little overwhelming. Luckily, Norwich has plenty of places in which to grab a satisfying bite.
+            From pizza to sushi to tacos, it’s all here.
+        </p>
+
+    </div>
+
+</body>
+
+</html>	

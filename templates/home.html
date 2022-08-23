@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.min.css') }}">
+
+    <script src="{{url_for('static', filename='js/lightbox-plus-jquery.min.js')}}"></script>
+
+
+</head>
+
+<body>
+
+    <h1> City Centre Apartment | Modern, Cozy & Chic </h1>
+
+    <div class="navigation">
+
+        <ul>
+
+            <li class="active">Home</li>
+
+            <li><a href="{{ url_for('rental') }}">Bookings</a></li>
+
+            <li><a href="{{ url_for('attractions') }}">Attractions</a></li>
+
+            <li><a href="{{ url_for('review') }}">Reviews</a></li>
+
+        </ul>
+
+    </div>
+
+    <div class="gallery">
+
+        <a href = "static/images/picture1.jpg" data-lightbox="mygallery"><img src="static/images/picture1small.jpg" alt=""></a>
+        <a href = "static/images/picture2.jpg" data-lightbox="mygallery"><img src="static/images/picture2small.jpg" alt=""></a>
+        <a href = "static/images/picture3.jpg" data-lightbox="mygallery"><img src="static/images/picture3small.jpg" alt=""></a>
+        <a href = "static/images/picture4.jpg" data-lightbox="mygallery"><img src="static/images/picture4small.jpg" alt=""></a>
+        <a href = "static/images/picture5.jpg" data-lightbox="mygallery"><img src="static/images/picture5small.jpg" alt=""></a>
+        <a href = "static/images/picture6.jpg" data-lightbox="mygallery"><img src="static/images/picture6small.jpg" alt=""></a>
+        <a href = "static/images/picture7.jpg" data-lightbox="mygallery"><img src="static/images/picture7small.jpg" alt=""></a>
+        <a href = "static/images/picture8.jpg" data-lightbox="mygallery"><img src="static/images/picture8small.jpg" alt=""></a>
+        <a href = "static/images/picture9.jpg" data-lightbox="mygallery"><img src="static/images/picture9small.jpg" alt=""></a>
+        <a href = "static/images/picture10.jpg" data-lightbox="mygallery"><img src="static/images/picture10small.jpg" alt=""></a>
+        <a href = "static/images/picture11.jpg" data-lightbox="mygallery"><img src="static/images/picture11small.jpg" alt=""></a>
+        <a href = "static/images/picture12.jpg" data-lightbox="mygallery"><img src="static/images/picture12small.jpg" alt=""></a>
+
+    </div>
+
+        <div class="wrapper">
+
+        <h2>Information</h2>
+        <p>
+            Our cozy and stylish 2-bedroom apartment features modern Scandi decor, high-speed WiFi and all the home comforts you need to feel welcome! Perfect for short breaks, family getaways and business or study stays.
+            Maximum occupancy is 6 people and we have a small on-site parking space. Set in the award-winning Norwich Lanes area in the city centre, you’ll find tourist attractions, shopping, arts venues, fine restaurants and excellent
+            cafes all within a few minutes’ walk. See below for more details.
+        </p>
+
+        <h2>Rooms</h2>
+
+        <h4>Living and Dining Room</h4>
+        <p>
+
+            With gorgeous cathedral views, this open-plan room consists of a living room, dining area, and attached kitchen.
+            The lounge has a corner sofa (that becomes a double bed in one swift motion), an armchair, a coffee table, and a flat-screen TV with 85+ channels plus in-built casting and streaming capabilities.
+            The dining area has a space-saving table and four chairs, which can also be used as a workspace, and some storage shelves with board games and books.
+        </p>
+
+        <h4>Kitchen</h4>
+        <p>
+           This area has a small fridge-freezer, sink and drainer, washer/dryer, iron, oven with gas stove and hood, kettle, toaster, and a Nespresso coffee machine (please note there is no microwave).
+            It's fully equipped with crockery, pots and pans, cutlery and basic cooking items like oil, herbs, and spices.
+        </p>
+
+        <h4>Bathroom</h4>
+        <p>
+            This room contains a shower/bath combo, a toilet, a sink unit, a mirrored cupboard, and a heated towel rail.
+            We provide shampoo, shower gel and hand soap, and towels are included for the number of guests in your booking.
+        </p>
+
+        <h4>Upstairs Bedroom</h4>
+        <p>
+            A stylish, unique and spacious bedroom with high ceilings and a very tall window. This bedroom is located on the upstairs level and includes a sumptuous super king-size bed (200cm x 180cm),
+            a clothing rail and some drawer/shelf space, bedside tables, lamps, and plugs with USB charging points by the bedside.
+            It also has a laptop-friendly workspace, and a flat-screen TV with an HDMI cable and a Chromecast to watch BBC iPlayer, Netflix, YouTube from your phone/tablet/laptop
+            (please note this TV has no access to live channels).
+        </p>
+
+        <h4>Downstairs Bedroom</h4>
+        <p>
+            A lovely double room with big windows and lots of light. This bedroom is located on the downstairs floor of the apartment and includes a double bed, a wardrobe for clothes and other essentials,
+            a full-length mirror, bedside tables, lamps, and plugs with USB charging points by the bedside.
+        </p>
+
+        <h4>Outside Space & Parking</h4>
+        <p>
+            There's a courtyard featuring benches and bicycle racks which is shared with our neighbours, and there's also an underground car park on-site.
+            One parking space is available for you to use free of charge (please note that it's quite small; if you have a large vehicle, get in touch so we can share other options).
+            While we don't have a garden ourselves, we are just a stone's throw from the beautiful public park Chapelfield Gardens.
+        </p>
+
+        <h2>Amenities</h2>
+
+        <p>The home comes with the following: Wireless Internet, Cable TV, Dryer, Iron, Television, Essential Kit, Heating, Washer, Laptop Friendly Workspace, Hair Dryer, Bed and Bath Supplies.</p>
+
+    </div>
+
+
+</body>
+
+</html>

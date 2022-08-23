@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Review Page</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <h1> City Centre Apartment | Modern, Cozy & Chic </h1>
+
+    <div class="navigation">
+
+        <ul>
+
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+
+            <li><a href="{{ url_for('rental') }}">Bookings</a></li>
+
+            <li><a href="{{ url_for('attractions') }}">Attractions</a></li>
+
+            <li class="active">Reviews</li>
+
+        </ul>
+
+    </div>
+
+    <div class="wrapper">
+
+        <form action = "/addReview" method = "POST">
+
+            Full Name<br>
+            <input type = "text" name="name"><br><br>
+
+            Date<br>
+            <input type = "date" name="date"/><br><br>
+
+            Comment<br>
+            <textarea name="comment" rows="10" cols="43"></textarea><br><br>
+
+            <input type = "submit" value = "Submit Review" />
+
+        </form>
+
+
+        <table>
+            <tr>
+                <th> Name </th>
+                <th> Comment </th>
+                <th> Review Date </th>
+            </tr>
+            {% for line in reviewsList %}
+                <tr>
+                    {% for item in line%}
+                        <td> {{item}} </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+
+</body>
+</html>	

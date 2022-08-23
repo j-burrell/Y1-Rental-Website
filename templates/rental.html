@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Rental Page</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <h1> City Centre Apartment | Modern, Cozy & Chic </h1>
+
+    <div class="navigation">
+
+        <ul>
+
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+
+            <li class="active">Bookings</li>
+
+            <li><a href="{{ url_for('attractions') }}">Attractions</a></li>
+
+            <li><a href="{{ url_for('review') }}">Reviews</a></li>
+
+        </ul>
+
+    </div>
+
+    <div class="wrapper">
+
+        <form action="/addBooking" method="POST">
+
+            First Name<br>
+            <input type="text" name="firstName"><br><br>
+
+            Last Name<br>
+            <input type="text" name="lastName"><br><br>
+
+            Email<br>
+            <input type="email" name="email"><br><br>
+
+            Arrival Date<br>
+            <input type="date" name="arrivalDate"><br><br>
+
+            Departure Date<br>
+            <input type="date" name="departureDate"><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <table>
+            <tr>
+                <th> Arrival Date </th>
+                <th> Departure Date </th>
+                <th> Rental approved by owner? </th>
+            </tr>
+            {% for line in rentals %}
+                <tr>
+                    {% for item in line%}
+                        <td> {{item}} </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+
+</body>
+
+
+</html>
